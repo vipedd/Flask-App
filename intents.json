@@ -1,0 +1,1037 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "How are you?"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Good to see you! What can I do for you?",
+        "Hello! How can I assist you today?",
+        "I'm fine! Thankyou and you?"
+      ]
+    },
+    {
+      "tag": "change_password",
+      "patterns": [
+        "How to change password",
+        "How do I change my password?",
+        "How can I change my login password",
+        "How can I change my network password",
+        "I need to change my password"
+      ],
+      "responses": [
+        "To change your password, go to the Identity Self-Service tab and click Change Password in the Password Management menu.\n If the system administrator has set up a password policy for you, make sure to follow the policy requirements for password complexity.\n You will need to provide your current password, your new password, and confirm your new password.\n Click Submit when you are done."
+      ]
+    },
+    {
+      "tag": "password_management",
+      "patterns": [
+        "What is Self Service Password Reset?",
+        "What is SSPR?",
+        "What does it mean SSPR",
+        "What does SSPR stends for"
+      ],
+      "responses": [
+        "Identity Manager includes Self Service Password Reset (SSPR) to help you manage the process for changing passwords and resetting forgotten passwords. During password reset, SSPR uses a challenge-response authentication method to authenticate the you. For more information, please visit: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/password-management-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "SSPR_Challenge_Response",
+      "patterns": [
+        "How do I set or change my challenge response for Self Service Password Reset?",
+        "How do I set my challenge response for SSPR?",
+        "How do I change my challenge response for SSPR?",
+        "What is the purpose of the Password Challenge Response page in SSPR?",
+        "How does SSPR verify my identity during login if I forget my password?",
+        "What are the valid responses to administrator-defined challenge questions in SSPR?"
+      ],
+      "responses": [
+        "To set or change your challenge response for Self Service Password Reset, go to the Password Challenge Response page in SSPR. This page allows you to specify responses that are valid for you when answering administrator defined questions, as well as user defined challenge questions and responses.\n During the login process, the login page automatically redirects you to the Challenge Response page. For more information, see the documentation at https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/password-management-identity-manager-dashboard.html."
+      ]
+    },
+    {
+      "tag": "SSPR_Change_Password",
+      "patterns": [
+        "How do I change my password in SSPR?",
+        "What is the process for changing my password in Self Service Password Reset?",
+        "Where can I go to change my SSPR password?"
+      ],
+      "responses": [
+        "To change your password in SSPR, go to the Change My Password page in the Identity Manager dashboard.\n Type your current password, then type your new password in the New Password text box and type it again in the Confirm Password text box.\n If your new password violates any of the password rules defined in the password policy by your administrator, you will see an error message on the Change Password page.\n Click Continue to see information about how to specify a password that meets the policy requirements as defined by your administrator.\n\n For more information, see the documentation at https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/password-management-identity-manager-dashboard.html."
+      ]
+    },
+    {
+      "tag": "SSPR_Password_Policy_Status",
+      "patterns": [
+        "How do I check my password policy status?",
+        "What is a password policy, and how does it affect my account in Identity Manager?",
+        "Can I change my password policy in SSPR?",
+        "How does the Password Policy Status and Policy page in SSPR work?"
+      ],
+      "responses": [
+        "To check your password policy status in Identity Manager, go to the Password Status and Policy page. This page shows the security measures associated with your password, as determined by your administrator. You cannot check your password policy requirements unless the User Application administrator has provided you with rights to do so. The User Application administrator can check the status of password policy on the Identity Manager Home page. This link does not exist by default; you need to customize the Home page to include it. For more information, see the documentation at https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/password-management-identity-manager-dashboard.html."
+      ]
+    },
+    {
+      "tag": "Identity Manager Password Policy",
+      "patterns": [
+        "What is my Identity Manager password policy?",
+        "How can I check my password policy in Identity Manager?",
+        "What are the rules for my password policy in Identity Manager?"
+      ],
+      "responses": [
+        "Your password policy in Identity Manager is determined by your administrator and specifies the security measures associated with your password. You can check your password policy requirements by going to the Identity Manager Home page and clicking on the Password Status and Policy link. If you do not have the rights to check your password policy, please contact your User Application administrator. Remember, if you forget your password, you can use Self Service Password Reset (SSPR) to reset it using challenge-response authentication method."
+      ]
+    },
+    {
+      "tag": "Password Challenge Response",
+      "patterns": [
+        "password challenge response",
+        "password challenge",
+        "challenge response"
+      ],
+      "responses": [
+        "Challenge questions are used to verify your identity during login when you have forgotten your password. If the system administrator has set up a password policy that enables this feature for you, you can use the Password Challenge Response page to:\n\nSpecify responses that are valid for you when answering administrator-defined questions\n\nSpecify your own questions and the valid responses for them (if your password policy enables this)\n\nTo use the Password Challenge Response page:\n\nOn the Identity Self-Service tab, click Password Challenge Response in the menu (under Password Management).\n\nThe Password Challenge Response page displays.\n\nType an appropriate response in each Response text box (they are all required), or use your previously stored response. When Use Stored Response is selected, the challenge answers, including the labels, are not shown. In addition, user-defined challenge questions are disabled.\n\nMake sure you specify responses that you can remember later.\n\nSpecify or change any user-defined questions that are required. You may not use the same question more than once.\n\nClick Submit.\n\nAfter you save the challenge responses, the User Application displays a message indicating that the challenge responses were saved successfully and displays the challenge response screen again with \"Use Stored Response?\" selected."
+      ]
+    },
+    {
+      "tag": "Password Hint Change",
+      "patterns": [
+        "how can I change my password hint?",
+        "what is a password hint?",
+        "how to set a new password hint?",
+        "can I update my password hint?",
+        "password hint change process",
+        "password hint definition",
+        "how do I create a password hint?"
+      ],
+      "responses": [
+        "A password hint is a word or phrase that you can use during login to help you remember your password. To change your password hint, go to the Password Hint Change page under Password Management on the Identity Self-Service tab. Type in the new text for your hint and click Submit. Please note that your password cannot appear within the hint text."
+      ]
+    },
+    {
+      "tag": "Password Error Message",
+      "patterns": [
+        "Why am I getting a password error message?",
+        "What does de password error message mean?"
+      ],
+      "responses": [
+        "This tag provides information on password error messages that can occur when changing your password. If your new password violates any of the password rules defined by your administrator, you will see an error message on the Change Password page. If you are using Microsoft Server 2008 Policy, and your password is in violation, the user interface will show this message at the top of the page: Password AD2008 complexity policy violation. If your new password is in violation, review the password rules defined by your administrator, and try again. You might be prompted to supply a password hint, if your administrator configured your security policy to do so. If so, see Password Hint Change. The status of your request is displayed."
+      ]
+    },
+    {
+      "tag": "PasswordPolicyStatus",
+      "patterns": [
+        "check password policy status",
+        "view password policy requirements",
+        "what is my password policy",
+        "password policy details",
+        "password requirements"
+      ],
+      "responses": [
+        "To check your password policy requirements, go to the Identity Self-Service tab and click on Password Policy Status in the menu under Password Management. This page will display the password policy assigned to you by your administrator. Note that items labeled 'invalid' are items that you cannot change."
+      ]
+    },
+    {
+      "tag": "password_sync_status",
+      "patterns": [
+        "What is my password sync status?",
+        "Has my password been synchronized?",
+        "Is my password synced across applications?",
+        "Why can't I access certain applications?",
+        "How can I check if my password has been synchronized?"
+      ],
+      "responses": [
+        "Use the Password Sync Status page to determine if your password has been synchronized across applications. Access another application only after your password has synchronized. Accessing applications prior to completion of synchronization causes application access issues.\n\nOn the Identity Self-Service tab, click Password Sync Status in the menu (under Password Management).The Password Sync Status page displays. Full-color icons indicate applications for which the password is synchronized. Dimmed icons indicate applications that are not yet synchronized."
+      ]
+    },
+    {
+      "tag": "password_reset",
+      "patterns": [
+        "forgot password",
+        "can't remember password",
+        "reset password",
+        "password recovery"
+      ],
+      "responses": [
+        "If you can't remember the password, you might be able to use the Forgot Password link for assistance. When you're prompted to log in, click the Forgot Password link. Type your username and click Submit. If Identity Manager responds that it can't find a password policy for you, see your system administrator for assistance. Answer the challenge questions that display. Identity Manager prompts you to answer the configured questions. When the answer matches with the response that you had saved earlier, you can reset the password. Click Submit."
+      ]
+    },
+    {
+      "tag": "ModifyTeam",
+      "patterns": [
+        "How do I modify a team?",
+        "Can I change the name of a team?",
+        "How do I change the name of a team?",
+        "What changes can I make to a team?",
+        "How do I add members to a team?",
+        "Can I add members to a team?",
+        "Can I remove a team member?",
+        "How do i remove a member from a team?",
+        "How can I remove a team member?",
+        "What are the permissions of a team manager?"
+      ],
+      "responses": [
+        "As an administrator, you can modify and delete teams. You can change the name and description of the team, modify requesters for the team, add or remove team members, and add or remove permissions for a team manager."
+      ]
+    },
+    
+    {
+      "tag": "View Teams",
+      "patterns": [
+        "How do I view my teams?",
+        "Where can I find a list of all teams?",
+        "How do I know which teams I am a member of?",
+        "How can I see the teams I have permissions to view?"
+      ],
+      "responses": [
+        "To view all teams, go to the Teams page.\n This page lists all teams that you have permissions to view.\n As a team member, you might be a requester or recipient and have different permissions to view, modify, or delete certain teams."
+      ]
+    },
+    {
+      "tag": "Create Team",
+      "patterns": [
+        "How do I create a team?",
+        "Can you guide me on creating a team?",
+        "What is the process of creating a team?",
+        "Can I create a team?"
+      ],
+      "responses": [
+        "As an administrator, you can create a team by specifying the team members and their roles. \n\nFirst, go to the Teams page and click on the 'New' button to create a new team.\n Then, you can add team members (Recipients) who receive the team permissions and those who can take action on recipient behalf (Requesters).\n Finally, specify the permissions (resources and provisioning request definitions) that apply to team members. For example, you can add a laptop resource that team members might be required to have."
+      ]
+    },
+    {
+      "tag": "Manage Teams",
+      "patterns": [
+        "How to manage teams?",
+        "How do I manage my teams?",
+        "What are teams in the identity applications?",
+        "What are the teams?",
+        "What do the teams tag do?",
+        "How can I work with teams in the identity management system?",
+        "Tell me about team management in NetIQ Identity Manager",
+        "Tell me how to manage my teams?"
+      ],
+      "responses": [
+        "In NetIQ Identity Manager, a team consists of two types of users: requesters and recipients.\n Requesters can perform permission requests on behalf of other team members and manage the proxy assignments for team members.\n Recipients are members of the team on whose behalf requesters can act.\n\n To manage teams, go to People > Teams in the identity applications."
+      ]
+    },
+    {
+      "tag": "ModifyTeam",
+      "patterns": [
+        "How do I modify a team?",
+        "Can I change the name of a team?",
+        "What changes can I make to a team?",
+        "How do I add members to a team?",
+        "Can I remove a team member?",
+        "What are the permissions of a team manager?"
+      ],
+      "responses": [
+        "As an administrator, you can modify and delete teams. \n\nYou can change the name and description of the team, modify requesters for the team, add or remove team members, and add or remove permissions for a team manager."
+      ]
+    },
+    {
+      "tag": "Managing Users, Groups, and Teams",
+      "patterns": [
+        "How can I create and manage users, groups, and teams?",        
+        "What is the process for creating a team?",
+        "Can I check which users or groups already exist?"
+      ],
+      "responses": ["If you have the appropriate role in the identity applications, you can create and manage users, groups, and teams. You can create users and teams in dashboard and User Application. You create and manage groups in the User Application. To check which users or groups already exist, use the Directory Search page. See Section B.0, Using the Directory Search in the User Application. For more information on managing teams, refer to the documentation at https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/users-groups-teams-identity-manager-dashboard.html."]
+    },
+    {
+      "tag": "Creating a User",
+      "patterns": [
+        "how to create a user",
+        "creating a new user in dashboard",
+        "add new user"
+      ],
+      "responses": ["To create a user, in the Dashboard select People > Users > +. The Create User page displays the user attributes that are enabled with Search and Read accesses, these access properties can be configured in Directory Abstraction Layer (DAL). The identity administrator defines the values that you can specify for the user. Also, when creating a user, you can see the user Container but you cannot modify its value. This limitation ensures that all users are stored in the same container. For more information, visit https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/users-groups-teams-identity-manager-dashboard.html."]
+    },
+    {
+      "tag": "Modify User Information",
+      "patterns": [
+        "How can I modify user information?",
+        "How do I change user information?",
+        "Can I edit user information in the application?",
+        "What user attributes can I modify?"
+      ],
+      "responses": [
+        "To modify user information, select a user from a list view and click on the pencil icon. You can edit attributes such as Title, Email, Telephone Number, Manager and more. Note that you are only allowed to modify the user attributes that are set by your administrator. You can find more details on this page: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/users-groups-teams-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "List Users",
+      "patterns": [
+        "list users",
+        "view users list",
+        "user listing",
+        "manage users view"
+      ],
+      "responses": ["To view the list of users in the list format, click <list view icon>. \n\nTo view users in the card format, click <card view icon>. \n\nAdministrator can configure what information to display on the user card. \n\nTo view the users in the tabular format, click <manage users view icon>.\n This displays the users in a tabular view, allowing you to sort users according to the user attributes such as Telephone Number, Email, Department, and more. You can customize the columns to be shown in this view. \n\nFor more information about customizing columns, click on the Dashboard. To edit user information such as Telephone Number, Email, Manager, and more, click <edit user icon> next to the user's name. If you want to see the organization chart of a particular user, click <org chart icon> next to the user's name. You are allowed to modify the user attributes that are set by your administrator. To delete a user, select the user that you want to delete and click <delete user icon>."]
+    },
+    {
+      "tag": "finding-users",
+      "patterns": [
+        "ways to find users in identity applications",
+        "how to search for a user",
+        "searching for users in identity applications"
+      ],
+      "responses": [
+        "There are two ways to find users in identity applications: Quick Search and Advanced Search. \n\nQuick Search lists the users based on the selected filters, while Advanced Search fetches a more refined list of users by searching for users with the defined user attributes. \nTo modify the filter options for Quick Search or to specify user attributes for Advanced Search, click the search icon and select the desired filter or attribute. \nYou can also configure the search results on a page by setting the index at the bottom. \n\nIdentity Manager Dashboard displays two different counts while showing the results: Total Count, which is the total count of users found in the system, and Search Count, which is the count of users shown for the specific search."
+      ]
+    },
+    {
+      "tag": "sorting_users",
+      "patterns": [
+        "How can I sort users in Manage Users view?",
+        "Can you explain sorting users in NetIQ Identity Manager?",
+        "What is compound indexing for sorting users?"
+      ],
+      "responses": ["In Manage Users view, users can be sorted according to their attributes. \nHowever, the administrator needs to configure compound indexes for the user attributes to enable sorting. If you are unable to sort users using any user attributes, you should contact your administrator to configure compound index for the required attribute to sort users.\n\n For more information, see Creating Compound Indexes in NetIQ Identity Manager Setup Guide for Windows."]
+    },
+    {
+      "tag": "view_employee_relationships",
+      "patterns": [
+        "How can I view an employee's relationships with different managers?",
+        "What are the steps to view the organization chart of an employee's direct reports?",
+        "Is it possible to see an employee's common membership in different teams?"
+      ],
+      "responses": [
+        "To view an employee's relationships with different managers, go to the employee's card and select the recursive Manager-Employee relationship from the drop-down list. Then click the arrow button to expand the chart and view the next level in the hierarchy. You can also see an employee's direct reports and common membership in different teams by clicking on their card and selecting the appropriate relationships from the drop-down list."
+      ]
+    },
+    {
+      "tag": "send_email_organization_chart",
+      "patterns": [
+        "Send email to user from organization chart",
+        "Email a user from organization chart",
+        "Select a user and send email from organization chart",
+        "How to send and email to a member of the organization chart?",
+        "Send an email to a user"
+      ],
+      "responses": ["To send an email to a user from the organization chart, click on the user's card and select the option to send an email. Please ensure that a default email client is configured on your system before attempting to send the email."]
+    },
+    {
+      "tag": "share_profile_organization_chart",
+      "patterns": [
+        "Share a user profile from organization chart",
+        "Email a user profile from organization chart",
+        "Send users's profile link over email from organization chart"
+      ],
+      "responses": ["To share user's profile link over email from the organization chart, click on the user's card and select the option to share the profile link. Please ensure that a default email client is configured on your system before attempting to send the email."]
+    },
+    {
+      "tag": "email_team_organization_chart",
+      "patterns": [
+        "Email user's team from organization chart",
+        "Send email to team members of user from organization chart",
+        "Email all team members under a user in organization chart"
+      ],
+      "responses": ["To send an email to all team members under {user} from the organization chart, click on the user's card and select the option to email the team. Please ensure that a default email client is configured on your system before attempting to send the email. Note that this option is only applicable to the Manager-Employee relationship."]
+    },
+    {
+      "tag": "configure_email_organization_chart",
+      "patterns": [
+        "Configure email client for organization chart",
+        "Set default email client for organization chart",
+        "Configure Email attribute on Settings page for organization chart"
+      ],
+      "responses": ["Before sending an email from the organization chart view, you must ensure that a default email client is configured in your system. To configure the default email client, please refer to the system documentation. Additionally, to ensure that the email and email team options work, you must configure the Email attribute as a primary or secondary attribute on the Settings page."]
+    },
+    {
+      "tag": "view_identity_apps_guide",
+      "patterns": [
+        "View NetIQ Identity Manager guide",
+        "View netiq guide",
+        "Open Identity Applications guide",
+        "Access administrator's guide for Identity Manager"
+      ],
+      "responses": ["To access the administrator's guide for the NetIQ Identity Manager - Identity Applications, please refer to the system documentation or visit the website of the vendor."]
+    },
+    
+    {
+      "tag": "viewing_requests",
+      "patterns": [
+        "How do I view my request history?",
+        "Where can I see my completed requests?",
+        "Can I track the status of my requests?",
+        "How can I raise a helpdesk ticket for my pending requests?"
+      ],
+      "responses": ["To view the status of a request in progress and completed requests, in the Dashboard select: Access > Request History. \n\nA team manager or supervisor can see the request history of other team members in the Others tab. You can also raise a Helpdesk ticket for your pending requests."]
+    },
+    {
+      "tag": "process_requests",
+      "patterns": [
+        "How do Process Requests work?",
+        "How do I delegate?",
+        "Can you explain Process Requests?",
+        "What is the Process Requests feature?",
+        "How do I submit a Process Request?",
+        "What types of Process Requests can be submitted?",
+        "How do I delegat when somebody is going on vacations or for a period of time?",
+        "How do I delegat when somebody is on vacations or for a period of time?",
+        "How to delegat vacations or for a period of time?",
+        "How do I delegate to someone for a period of time?",
+        "Hoc can I make a delegation?"
+      ],
+      "responses": [
+        "Here you have a practical example to guide you along the process.\n\n- Ernie (an end user) browses a list of resources available to him, and requests access to the Siebel* system.\n\n- Amy (an approver) receives notification of an approval request via e-mail (which contains an URL). She clicks the link, is presented with an approval form, and approves it.\n\n- Ernie checks on the status of his previous request for Siebel access (which has now gone to a second person for approval). He sees that it is still in progress.\n\n- Amy is going on vacation, so she indicates that she is temporarily unavailable. No new approval tasks are assigned to her while she is unavailable.\n\n- Amy opens her approval task list, sees that there are too many for her to respond to in a timely manner, and reassigns several to co-workers.\n\n- Pat (an administrative assistant, acting as a proxy user for Amy) opens Amys task list and performs an approval task for her.\n\n- Max (a manager) views the task lists of people in his department. He knows that Amy is on vacation, so he reassigns tasks to others in his department.\n\n- Max initiates a request for a database account for someone in his department who reports directly to him.\n\n- Max assigns Dan to be an authorized delegate for Amy.\n\n- Dan (now a delegated approver) receives Amy tasks when she is unavailable.\n\n- Max engages an unpaid intern, who should not be entered into the HR system. The system administrator creates the user record for this intern and requests that he be given access to Notes, Active Directory*, and Oracle*."
+      ]
+    },
+    {
+      "tag": "managing_requests",
+      "patterns": [
+        "managing requests for approval or denial",
+        "reviewing requests for approval or denial",
+        "approving or denying access requests",
+        "how to manage requests for approval or denial",
+        "How do I manage my or others requests?"
+      ],
+      "responses": [
+        "In some organizations, a group of people might be responsible for reviewing, approving, and denying requests for access. When this occurs, each member of the group receives the same requests. For example, the IT Services team might be responsible for all requests for telecommunications and computing equipment. When a new employee requests a cellphone, the request gets assigned to all members of the IT Services team. Anyone on the team can complete the request. You can manage these requests for approval or denial using the Identity Manager Dashboard.\n\n For more information, please see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/approve-deny-comment-task-request.html"
+      ]
+    },
+    {
+      "tag": "claim_request",
+      "patterns": [
+        "How can I claim a request?",
+        "Can I take ownership of a request?",
+        "What happens when I claim a request?"
+      ],
+      "responses": [
+        "You can claim responsibility for a request by clicking the Claim button. Once you claim a request, it will be removed from other members' task lists, and you can act on the required task immediately or later. If you don't act on the task, other members of your group won't see the request in their Tasks until you release the request.\n\nFor more information, please visit: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/approve-deny-comment-task-request.html"
+      ]
+    },
+    
+    {
+      "tag": "release_request",
+      "patterns": [
+        "How can I release a claimed request?",
+        "What do I do if I no longer want to act on a request I claimed?",
+        "How do I unclaim a request?"
+      ],
+      "responses": [
+        "To release a request that you claimed, go to your Tasks and find the task that you claimed. Click on the 'Release' button to release the claim. This will return the request to the list of available tasks for others to claim. For more information, please visit: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/approve-deny-comment-task-request.html"
+      ]
+    },
+    {
+      "tag": "request_permission",
+      "patterns": [
+        "How can I request Identity Manager permissions?",
+        "What is the process for requesting Identity Manager permissions?",
+        "Can you help me with requesting permissions in Identity Manager?",
+        "How do I request permissions in Identity Manager?",
+        "What are the steps to request permissions in Identity Manager?",
+        "What is the justification process for conflicting roles when requesting permissions in Identity Manager?",
+        "How can I request Identity Governance permissions?",
+        "What are the IDM catalogs?",
+        "How can I request IG applications?",
+        "What are IG technical roles?"
+      ],
+      "responses": ["- Before requesting permissions, review the following considerations:\n\n- You might be able to request access on behalf of another user. For example, if you are a team manager, you usually can act on behalf of team members. The process is the same, except you must specify that the request is for Others instead of Self.\n\n- Do not use punctuation when specifying a permission that you want to request. If the name of the permission you want to request includes punctuation, omit the punctuation when searching.\n\n- Different permissions require different information, depending on how the administrator has configured the permission form. If the permission requires detailed information, the Dashboard redirects you to a separate window when you select the permission.\n\n- You can request multiple permissions at the same time.\n\n- However, if the permission form for one of the requests requires special types of information, you might not be able to include that permission in a multi-permission request. To request multiple permissions at once, the request forms for the various requests cannot require detailed information.\n\n- You can specify the expiry date while requesting for a resource or a role.\n\n- When you request a permission, you must specify a reason for the request. You can also specify the date that you need the permission to begin or expire.\n\n- You can request permissions in the following ways:\n\n- Select one of the Featured Items. You cannot make this request on behalf of another person.\n\nNOTE:By default, Helpdesk Ticket permission appears in the Featured Items category. You can raise a helpdesk ticket using this permission.\n\n- Request several permissions at once.\n\n- Request a permission that is not among the Featured Items.\n\n- Perform the request on behalf of someone else.\n\n For more information visit https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/request-roles-resources-in-identity-manager-dashboard.html for more information."]
+    },
+    {
+      "tag": "viewing_requests",
+      "patterns": [
+        "How do I view my request history?",
+        "Where can I see my completed requests?",
+        "Can I track the status of my requests?",
+        "How can I raise a helpdesk ticket for my pending requests?"
+      ],
+      "response": ["To view the status of a request in progress and completed requests, in the Dashboard select: Access > Request History. A team manager or supervisor can see the request history of other team members in the Others tab. You can also raise a Helpdesk ticket for your pending requests."]
+    },
+    {
+      "tag": "tracking_request",
+      "patterns": [
+        "How can I track the status of my request?",
+        "Can I see the approval process for my request?",
+        "How do I check the progress of my request?",
+        "How can I see which step my request is at?"
+      ],
+      "responses": [
+        "For each request, you can view not only your actions but also the workflow involved in approving or denying your request. Each step in the process has a timestamp. If you request for applications or technical roles from the IG Applications or IG Technical Roles tabs, such requests cannot be tracked through the Request History page. To track the IG requests, you can add the IG history URL from the Applications page of the Dashboard. To track a pending request, select the request, then change the upper-right menu to User and System. The Dashboard shows the current state of the request in the approval process."
+      ]
+    },
+    {
+      "tag": "canceling_request",
+      "patterns": [
+        "How can I cancel a pending request?",
+        "Can I revoke a request I have already submitted?",
+        "Is it possible to cancel a request in progress?",
+        "What should I do if I want to cancel a pending request?"
+      ],
+      "responses": [
+        "You can cancel a pending request from Request History. Select the request in the list, then select Cancel this request on the subsequent window."
+      ]
+    },
+    {
+      "tag": "Deep Linking to a Request",
+      "patterns": [
+        "How can I deep link to a specific process request in Identity Manager?",
+        "What is the purpose of deep linking in Identity Manager?",
+        "Can I send a direct link to a process request to an employee in Identity Manager?"
+      ],
+      "responses": [
+        "Identity applications lets you to deep link to a specific process request (also known as a provisioning request). This feature gives a manager the ability to send a specific process request URL to an employee, so this employee can request the process quickly without having to go through the Identity Manager Dashboard. When you deep link to a process request, the request form is displayed in the body of the page, along with the header for the Identity Applications. Once a permission is requested, the request appears in the Access > Request History page of the requester and also appears on the Tasks page of the reviewer. For more information, see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/deep-link-request-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "deep_linking",
+      "patterns": [
+        "How can I deep link to a specific process request?",
+        "What is deep linking to a request in Identity applications?",
+        "Can I send a specific process request URL to an employee in Identity applications?"
+      ],
+      "responses": [
+        "Deep Linking to a Request: Identity Applications lets you deep link to a specific process request (also known as a provisioning request) and send a request URL to an employee so they can request the process quickly without having to go through the Identity Manager Dashboard. This feature is useful for managers who want to expedite the process. The request form will be displayed in the body of the page, along with the header for the Identity Applications. Once a permission is requested, the request will appear in the Access > Request History page of the requester and also appear on the Tasks page of the reviewer. To learn more about deep linking to a request, check out this link: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/deep-link-request-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "reassign_request",
+      "patterns": [
+        "How can I reassign a request?",
+        "reassign request",
+        "How to reassign a request",
+        "How can I reassign a task?",
+        "How to reassign a task to another user"
+      ],
+      "responses": [
+        "To reassign a task, you can follow these steps:\n\n1. Select the request under the Self tab or Others tab depending on your access level.\n2. Click Reassign and select the user you want to reassign the task to from the drop-down list.\n3. Provide a comment for reassignment, and click Reassign.\n\nIf the task is reassigned to you and you are unable to take it, you can return the task to the user who assigned the task to you.\n\nFor more information, please refer to this documentation: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/reassign-task.html"
+      ]
+    },
+    {
+      "tag": "return_request",
+      "patterns": [
+        "How can I return a request?",
+        "How do I return a request?",
+        "What should I do if I don't want to act on a reassigned request?",
+        "Can I return a task that was assigned to me?"
+      ],
+      "responses": [
+        "If you don't want to act on a request that is reassigned to you, you can return that request. The identity applications automatically assigns the returned task back to the actual approver. To return a task, select the request under the Self tab and then select Return. Provide a reason for returning the task and click Return. To return a task that was assigned to you, select the request under the Self tab and then select Return. Provide a reason for returning the task and click Return. The identity applications automatically assigns the returned task back to the actual approver."
+      ]
+    },
+    {
+      "tag": "update_profile",
+      "patterns": [
+        "How can I update my identity profile?",
+        "How to update my profile?",
+        "How to update my identity profile?",
+        "Where can I edit my information in the Dashboard?",
+        "How do I change my phone number in my profile?"
+      ],
+      "responses": [
+        "To view or update your identity profile, in the Dashboard select: [your ID] > My Profile. \n\nAlternatively, you can click the link on your dashboard. This page lists your reporting manager, roles, resources, and group. Your profile includes settings such as your name, email address, and phone number. Your organization determines which settings you can modify.\n\n Check this link: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/manage-identity-manager-profile-on-dashboard.html"
+      ]
+    },
+    {
+      "tag": "Managing the Organization Chart",
+      "patterns": [
+        "How do I view the organization chart in the Identity Manager Dashboard?",
+        "What is the org chart in the Identity Manager Dashboard?",
+        "How can I see the relationship hierarchy of entities in my organization?"
+      ],
+      "responses": ["The Identity Manager Dashboard gives you a convenient way to search for an entity in your organization and view its organization chart (an entity can be a user, group, or custom entity defined by your administrator). An organization chart shows the hierarchy of relationships, such as Manager-Employee, Group membership, or User groups among entities in your organization.\n\nBy default, the Organization Chart page in the Dashboard shows the placement of a user entity within the organization and its relationship hierarchy with other user entities based on the organization chart relationship set by the administrator. \n\nThe organization chart is often referred as “org chart”. You may find both these terminologies used in the Dashboard.\n\nFor more information, please visit: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/viewing-organization-chart.html"]
+    },
+    {
+      "tag": "viewing-organization-chart",
+      "patterns": [
+        "How can I view the organization chart?",
+        "How do I view the organization chart?",
+        "What is the process to access the organization chart?",
+        "Can I view the organization chart for all entities?",
+        "What are the ways to navigate to the organization chart of a user entity?"
+      ],
+      "responses": ["By default, Security Administrator and Provisioning Administrator can view the organization chart for all the entities in the system. To view the organization chart for a user entity, you can navigate in one of the following ways: Go to People > Organization Chart, this page displays the organization chart of the logged-in user based on the default organization chart relationship configured in the Settings page. To find the organization chart of other users in the system, type the name of other users in the search bar provided in the Organization Chart page. Alternatively, go to People > Users and select any user from the list and click on the organization chart icon that is beside the user name. Note that you should have Org Chart access to view the Organization Chart. Contact your administrator to provide this access."]
+    },
+    {
+      "tag": "understanding-organization-chart",
+      "patterns": [
+        "What is the organization chart?",
+        "How does the organization chart work?",
+        "What information is displayed in the organization chart cards?",
+        "Can the organization chart view be customized?"
+      ],
+      "responses": ["The organization chart displays entity information in a hierarchical order based on the default organization chart relationship configured by the administrator. Each card displays primary and secondary attributes defined by the administrator, and if these attributes are not defined, the CN attribute is displayed. The organization chart view can be customized. The root or selected entity displayed at the top is the starting point and the child entity is displayed at the bottom."]
+    },
+    {
+      "tag": "working-with-organization-chart",
+      "patterns": [
+        "What tasks can I perform on the organization chart page?",
+        "How can I view other relationships of an entity on the organization chart?",
+        "Can I change the root entity in the organization chart?",
+        "How can I view the organization chart of an entity at the next level in the hierarchy?"
+      ],
+      "responses": ["On the Organization Chart page in the Dashboard, you can view the organization chart of an entity based on the search input entered. Additionally, you can perform other tasks such as viewing other relationships of the entity, changing the root entity, and viewing the organization chart of an entity at the next level in the hierarchy. For example, in the XYZ company's marketing team, Margo Mackenzie is the Director and Allison Blake, Kevin Chester, and Maria Belafonte are employees who report to her. Margo Mackenzie reports to Timothy Swan, the Vice President of the Marketing team. To view their individual organization chart based on the Manager-Employee relationship, go to People > Organization Chart and search for Timothy Swan or Margo Mackenzie."]
+    },
+    {
+      "tag": "resetting-root-org-chart",
+      "patterns": [
+        "How do I reset the root in my organization chart view?",
+        "Can I change the root user in the organization chart?",
+        "What is the process to make a new user the root in the organization chart view?"
+      ],
+      "responses": ["To reset the root user in your organization chart view, first identify the user that you want to make as the new root. Then, go to that user's card in the organization chart view and click on the icon to make them the new root. For example, if you are viewing the organization chart where Timothy Swan is the manager and you want to make Margo Mackenzie the new root, you can go to Margo Mackenzie's card and click on the icon. Margo Mackenzie will become the new root and will appear at the top in the Manager-Employee organization chart, with her employees listed under her."]
+    },
+    {
+      "tag": "Switch-Organization-Chart-View",
+      "patterns": [
+        "How do I switch to a different relationship in the organization chart view?",
+        "Can I change the root user in the organization chart view?",
+        "How do I view the organization chart based on a different relationship?",
+        "What is the process to switch to a different organization chart view?"
+      ],
+      "responses": ["To switch to a different relationship or change the root user in the organization chart view, follow these steps: identify the user whose organization chart you want to view, go to the user's card and click on the 'Switch Relationship' icon. From the drop-down menu, select the desired relationship type. The organization chart will be updated to display the selected relationship hierarchy. The user whose card was clicked will become the new root user in the chart. For example, if you were viewing the Manager-Employee relationship chart where Margo Mackenzie is the manager, and you want to view the Mentor-Employee relationship of Maria Belafonte, you can go to Maria Belafonte's card, click on the 'Switch Relationship' icon, and select 'Mentor-Employee' from the drop-down menu. Maria Belafonte will become the new root user in the Mentor-Employee chart, and her employees, Kevin Chester and Allison Blake, will be listed under her."]
+    },
+    {
+      "tag": "Organization Chart - Reset Root",
+      "patterns": [
+        "reset the root user",
+        "change the root user",
+        "set new root in organization chart view"
+      ],
+      "responses": ["To reset the root user in your organization chart view, identify the user that you want to make as the new root. Go to the user's card and click on the icon. The user becomes the new root and is now at the top in the Manager-Employee organization chart."]
+    },
+    {
+      "tag": "Organization Chart - View Relationship",
+      "patterns": [
+        "view relationships of a user",
+        "view user group relationship",
+        "view mentor-employee relationship"
+      ],
+      "responses": ["To view relationships of a user other than the default, go to the user's card and click on the dropdown menu. Select the relationship you want to view and the organization chart will be updated accordingly. Note that the maximum level to which you can expand the organization chart of a user and view the relationships inline is defined by the administrator."]
+    },
+    {
+      "tag": "navigate_relationship_hierarchy",
+      "patterns": [
+        "How do I navigate to the next level in a relationship hierarchy?",
+        "What are the steps to expand and view the next level in a relationship tree?",
+        "Can you tell me how to see the organization chart of an employee's manager's manager?"
+      ],
+      "responses": [
+        "To navigate to the next level in a relationship hierarchy, go to the employee's card and select the recursive Manager-Employee relationship from the drop-down list. Then click the arrow button to expand the chart and view the next level in the hierarchy."
+      ]
+    },
+    {
+      "tag": "managing_helpdesk_tasks",
+      "patterns": [
+        "helpdesk tasks",
+        "managing helpdesk tickets",
+        "helpdesk management"
+      ],
+      "responses": [
+        "Helpdesk tasks are generated for every helpdesk ticket raised in the system. If you are a helpdesk user, select the Helpdesk Ticket that requires your action. Perform any of the following actions on the selected helpdesk ticket: Update, Complete or Cancel. You can also Claim or Release a helpdesk task. If you claim a helpdesk ticket from the list of tasks, the helpdesk ticket appears in your Self tasks. For more information on how to manage helpdesk tasks, please refer to the documentation provided by your organization."
+      ]
+    },
+    {
+      "tag": "viewing_proxy_assignments",
+      "patterns": [
+        "how do I view my proxy assignments?",
+        "where can I see my proxy assignments?",
+        "viewing proxy assignments"
+      ],
+      "responses": [
+        "To view your proxy assignments, go to the Dashboard and select Access > Proxy Assignments."
+      ]
+    },
+    {
+      "tag": "acting_as_proxy",
+      "patterns": [
+        "How do I act as a proxy for another user?",
+        "What is proxy as in the application?",
+        "How can I perform actions on behalf of another user?",
+        "Can I serve as a proxy for someone else?"
+      ],
+      "responses": [
+        "If an administrator has assigned you to serve as a proxy for another user, you can access the proxy option from your account menu in the upper right corner. Click on Your ID > Proxy As and specify the user you wish to act as proxy for."
+      ]
+    },
+    {
+      "tag": "managing_proxy_assignments",
+      "patterns": [
+        "Managing Proxy Assignments"
+      ],
+      "responses": [
+        "As an administrator or a team manager, you can create, modify, and delete an assignment. To manage proxy assignments for a team as a team manager, ensure that the team is appropriately configured. The team manager can only create assignments for team members."
+      ]
+    },
+    {
+      "tag": "Managing Delegations",
+      "patterns": [
+        "How do I manage delegations?",
+        "Can I delegate my tasks to others?",
+        "How can I see the delegation information?"
+      ],
+      "responses": [
+        "In some organizations, delegating tasks to another user is allowed. If you are a delegate for other tasks or your tasks are delegated to other users in the organization, you can see the delegation information in Administration > Delegation.\n\nYou can see the delegated tasks in the Tasks page. The tasks with icon indicates that task is delegated.\n\nIMPORTANT: Creating delegation assignment also requires you to specify your availability details. You can either provide your availability details while creating the delegation assignment or create delegation and then specify availability details in a separate action. This depends on whether the administrator has enabled the required settings, in which case you see the Unavailable From option in the Create Delegate Assignment page. However, if you are unable to see the Unavailable From option, you must specify your availability details from the Availability Settings page after creating the delegation assignment. This ensures that the delegation functions as expected. For more information, click on the Dashboard."
+      ]
+    },
+    {
+      "tag": "Managing Your Availability",
+      "patterns": [
+        "How can I manage my availability?",
+        "How do I specify which resource requests I'm unavailable for?",
+        "Can I control when I'm available for delegate assignments?",
+        "What is the process for managing my availability?"
+      ],
+      "responses": [
+        "To manage your availability for delegate assignments, you can navigate to People > Availability in the Dashboard. \n\nFrom there, you can specify which resource requests you are unavailable to work on during a particular time period. \nIf you prefer not to specify your availability for each request definition individually, you can use the Not Available for All Requests from Change Status action. \n\nNote that before using the Unavailable From action, you need to have at least one delegate assignment to work on, which must be created by your team manager or the Provisioning Application Administrator. \nAlso, the global settings pertaining to availability-based delegation are specified by Set Availability while creating a Delegation Assignment in Settings > Customization > Navigation Items > General."
+      ]
+    },
+    {
+      "tag": "Managing Your Profile",
+      "patterns": [
+        "How do I manage my user account",
+        "How can I manage my user account",
+        "How can I manage my profile?",
+        "look up other users and groups",
+        "visualize users and groups",
+        "list applications associated with me"
+      ],
+      "responses": ["The identity applications give you a convenient way to display and work with your identity information. They also enable your organization to be more responsive by giving you access to the information about other users that you need whenever you need it. For more information on managing your profile, please visit https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/manage-identity-manager-profile-on-dashboard.html"]
+    },
+    {
+      "tag": "Adding an Application",
+      "patterns": [
+        "How do I add an application in Identity Manager?",
+        "What details do I need to specify when adding an application in Identity Manager?",
+        "Is it possible to add a logo or image for an application in Identity Manager?",
+        "Can I add a logo or an image to my identity application?"
+      ],
+      "responses": [
+        "To add an application in Identity Manager, you need to specify the name, description, and optionally an image and a link for the application. You can also specify the category to which the application belongs, if desired. All fields with an asterisk () must have a value specified. For more information, please see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/create-featured-items-identity-manager-dashboard.html#adding-an-application"
+      ]
+    },
+    {
+      "tag": "Adding a Permission",
+      "patterns": [
+        "How can I add a permission in Identity Manager?",
+        "What details do I need to specify when adding a permission?",
+        "Can I add an image to a permission in Identity Manager?",
+        "Adding a permission",
+        "How to add a permission?"
+      ],
+      "responses": [
+        "To add a permission, specify the following details: Permissions (which can be a role, resource, or PRD), and optionally, the category and an image. To create a new permission, click + on the Permissions tab. You must specify a value for all fields that have an asterisk (*), such as the name and description for a permission. For more information on adding a permission, see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/create-featured-items-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "Manage Categories",
+      "patterns": [
+        "How can I organize applications into categories in Identity Manager?",
+        "Can I add new categories to the Applications page?",
+        "How do I modify or delete a category in Identity Manager?"
+      ],
+      "responses": [
+        "You can organize Applications items into logical categories. You can create any number of categories that your organization might need. You can also rearrange the tiles within a category or move tiles to a different category.\n\nTo add a new category, select New Category and specify its name. To add items to a category, drag and drop them from the New Items and Permissions section on the right side of the page. To remove an item, select the trash icon within the item's tile. You can also modify the settings and name of a category, as well as reorder the items within it.\n\nTo delete a category, select the trash icon to the right of the category's name. For more information on managing categories in Identity Manager, please see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/how-to-add-modify-delete-applications-category-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "ManagingTasks",
+      "patterns": [
+        "how can I manage my tasks",
+        "what are the options to approve or deny tasks in IDM",
+        "can I approve or deny multiple tasks at once in Identity Manager",
+        "how do I review pending requests in IDM"
+      ],
+      "responses": [
+        "If you are responsible for approving or denying requested permissions in Identity Manager, you can use the Dashboard to manage your tasks as you might have previously done in the User Application. You can approve or deny requests one at a time, or you can approve or deny multiple simple requests that do not require detailed information in bulk.\n\n For more information, please refer to this link: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/how-to-manage-tasks-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "ViewingTasks",
+      "patterns": [
+        "How do I view my tasks in IDM?",
+        "How do I view my tasks?",
+        "How can I manage my tasks?",
+        "where can I find my assigned tasks in Identity Manager",
+        "how can I see tasks assigned to others in IDM"
+      ],
+      "responses": [
+        "To manage your tasks, select Tasks. To view tasks assigned to others, click Others. If you are serving as a proxy or delegate for others tasks, you can complete tasks that are assigned to someone else. For more information about proxy assignments and delegation assignments, see Acting as a Proxy. IDM Approvals: Applies if you have enabled the Show IG Approvals in tasks page option in the Configuration > Identity Governance page. This tab lists all the Identity Manager tasks. By default, it lists all the Self tasks. To view others tasks with an appropriate role, click Others. For more information, please refer to this link: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/t4aig3zg7npz.html"
+      ]
+    },
+    {
+      "tag": "helpdesk_ticket",
+      "patterns": [
+        "How can I contact the Helpdesk?",
+        "What should I do if I need help with a request?",
+        "How do I raise a Helpdesk ticket?",
+        "What happens after I raise a Helpdesk ticket?",
+        "What is the process for resolving a Helpdesk ticket?"
+      ],
+      "responses": [
+        "You can contact the Helpdesk if you are seeking help for any unattended requests for a long time. You can raise a Helpdesk ticket in the following places: Access > Request, click Helpdesk Ticket. Applications, click Helpdesk Ticket.\nAccess > Request History, click on the request that you want to raise a helpdesk ticket.\n\nFor more information, click on the Dashboard.\n\nHelpdesk members receive a notification about the helpdesk ticket. You will get the notification on your ticket, once the ticket is resolved or closed."
+      ]
+    },
+    {
+      "tag": "revoking_permissions",
+      "patterns": [
+        "How do I revoke a permission in Identity Manager?",
+        "Can I revoke permissions for other users in Identity Manager?",
+        "What is the process to revoke a permission in Identity Manager?"
+      ],
+      "responses": [
+        "If you no longer need access to a role or a resource, you can revoke the permission to that role or resource. To revoke a permission, navigate to Access > Permissions and select the required permission and specify a reason for revoking the permission.\n\nYou can also revoke a permission on behalf of other users. For example, if your team member has moved from Department 1 to Department 2, and the team member does not need access to a particular resource any longer, Identity Manager provides the facility to revoke the permission for that user. To revoke a permission, select Others and remove the permission. You can revoke multiple permissions at one time. You can add these permission to a queue for reviewing them before deciding to revoke them.\n\nOnly the administrator and a team manager can revoke permissions for other users. An administrator can revoke permissions for any user in the organization while a team manager can revoke permissions only for his team members.\n\nYou can revoke permissions for other users through the following ways:\n\n- Search by user: Allows you to search for a user and revoke permissions for that user. You can directly revoke a permission for the user or add the permission to a queue. A queue is a persistent work area where you can temporarily store permissions that you can review and revoke if required. You can then search for other permissions that you want to revoke for that user and add them to the queue. This allows you to revoke all permissions at one time.\n\n- Search by permissions: Allows you to search for a specific permission. If you select a permission, it will list all the users who have that permission. You can directly revoke the permission for the selected user or add this permission to a queue and revoke that permission for multiple users at one time.\n\n- Team Manager: If you are a team manager, you can revoke permissions of your team members in the Others tab. Ensure you have required permissions to revoke others permissions.\n\n- Administrator: If you are an administrator, you can add revoke permissions for a team manager. For example, if you want to add revoke a role from a user permission for a team manager. Go to People > Teams, edit the team permissions to enable revoke permissions for a team manager.\n\nThis option allows the team manager to revoke the selected role from the team members.\n\nFor more information, please visit: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/revoke-roles-resources-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "Managing Applications",
+      "patterns": [
+        "How can I manage applications?",
+        "How can I manage applications in Identity Manager?",
+        "What is the process for modifying the Applications page in Identity Manager?",
+        "Can I customize the applications displayed on the Applications page?"
+      ],
+      "responses": [
+        "As an administrator for the identity applications, you can modify the Applications page to display all the applications, activities, and permissions that you want users to access. By default, the identity applications provide a Home items category, which cannot be deleted. After you complete your changes, click Editing done to return to Applications. For more information, please see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/manage-apps-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "Creating Featured Items",
+      "patterns": [
+        "How can I create new applications or permissions?",
+        "How can I create new applications or permissions in Identity Manager?",
+        "Is it possible to add custom items to the Applications page?",
+        "What fields do I need to specify when creating a new application or permission?"
+      ],
+      "responses": [
+        "You can create any number of applications and permissions that you might want to add to the Applications page. You do not have to add these items to Home items or other Applications categories. To create a new item, click + on Applications or Permissions tab. Complete the form for an application or a permission. You must specify a value for all fields that have an asterisk (), such as the name and description for an application. For more information on adding an application or permission, see: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/create-featured-items-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "locale_check",
+      "patterns": [
+        "preferred locale check",
+        "locale prompt",
+        "language check",
+        "supported language"
+      ],
+      "responses": [
+        "If you receive a prompt to select your own preferred locale when you log in, your administrator configured the identity applications to perform a language check on users browsers. This might be necessary to ensure that the content that you see appears in a supported language. When prompted to add a locale, open the Available Locales list, select a locale, and click Add. For more information, see Adding the New Language to the Identity Applications."
+      ]
+    },
+    {
+      "tag": "login_troubleshooting",
+      "patterns": [
+        "I have trouble logging in",
+        "I can't log in",
+        "I have login problems",
+        "I have login issues",
+        "I can't access my account",
+        "I have a login error",
+        "login not working",
+        "My username or password not recognized"
+      ],
+      "responses": [
+        "If you are unable to log in, make sure that you are using the right username and typing the password correctly (spelling, uppercase or lowercase letters, etc.). If you still have trouble, consult your system administrator. It is helpful if you can provide details about the problem you are having (such as error messages)."
+      ]
+    },
+    {
+      "tag": "prompted-for-additional-information",
+      "patterns": [
+        "If You're Prompted for Additional Information",
+        "Prompted for additional information after login",
+        "Prompted"
+      ],
+      "responses": [
+        "You might be prompted for other kinds of information as soon as you log in. It all depends on how the system administrator has set up your password policy (if any). For example, if this is your first login, you are prompted to define your challenge questions and responses. If your password has expired, you are prompted to reset it."
+      ]
+    },
+    {
+      "tag": "Logging Out",
+      "patterns": [
+        "How do I log out?"
+      ],
+      "responses": [
+        "When you are finished working on the Dashboard and other identity applications, you should log out. On the Dashboard, click your username in the upper right corner, then select Sign out."
+      ]
+    },
+    {
+      "tag": "How can I customize my Dashboard?",
+      "patterns": [
+        "How do I change my Dashboard?",
+        "How do I change the display of my Dashboard?",
+        "What options are available for personalizing my Dashboard?",
+        "Can I add widgets to my Dashboard?",
+        "How do I reposition widgets on my Dashboard?",
+        "How can I configure and personalize widget fields on my Dashboard?",
+        "How do I manage widgets and layouts on my Dashboard?",
+        "What are the steps for managing the global Dashboard?",
+        "What's the process for changing the Dashboard layout?",
+        "How do I add a widget to my Dashboard?",
+        "What's involved in configuring a widget?"
+      ],
+      "responses": [
+        "The identity applications provide many options to change the display of your Dashboard and then save it as a personalized view. For example, you can add widgets and reposition them based on your interest. You can also configure the widget fields and personalize them. This document helps you understand the different options to personalize your Dashboard. You can learn more about managing widgets and layouts by visiting this link: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/how-to-customize-identity-manager-dashboard.html"
+      ]
+    },
+    {
+      "tag": "Viewing Your Permissions",
+      "patterns": [
+        "How can I view my permissions?",
+        "What permissions do I have?",
+        "How do I check my access to roles and resources?",
+        "Can I search for a specific permission?",
+        "What are the details displayed for individual permissions?",
+        "How can I view the permissions of other team members?",
+        "What information can I see when searching by user or permission?"
+      ],
+      "responses": [
+        "Permissions represent the accounts, roles, or resources that are available to you. Permissions may be assigned automatically to you by your organization or you can request for specific permissions. You can also inherit some permissions indirectly through role relationships or if you are a member of a group or a container. To view the roles and resources to which you have access to, navigate to Access > Permissions on the Dashboard. NOTE:By default, the Permissions page lists the permissions that are assigned or approved to you directly. However, it may vary depending on how the administrator has configured the settings for the page. To see the child permissions mapped with the assigned or approved permissions, click. To search for a specific permission from the list, type the name or description of the permission in the Search box. You can also filter the list. To search for a specific permission from the list, type the name, description, or CN of the permission in the Search box. You can also filter the list. Viewing the Permission Details, Select the permission for which you want to view more details. NOTE:Searching by permission details is not supported for a team manager or supervisor user. However, they can see the permissions of their team members."
+      ]
+    },
+    {
+      "tag": "Requesting Permissions",
+      "patterns": [
+        "How can I request permissions?",
+        "What is the process for requesting access?",
+        "Can I request access on behalf of another user?",
+        "How do I request multiple permissions?",
+        "What information do I need to provide when requesting permissions?",
+        "How do I specify the expiry date for a resource or role?",
+        "What is the process for requesting a permission that is not among the Featured Items?",
+        "How can I make a request on behalf of someone else?"
+      ],
+      "responses": [
+        "To request roles and resources, click Access > Requests.\n\n Before requesting permissions, review the following considerations: \n\n- You might be able to request access on behalf of another user. For example, if you are a team manager, you usually can act on behalf of team members. The process is the same, except you must specify that the request is for Others instead of Self. \n\n- Do not use punctuation when specifying a permission that you want to request. If the name of the permission you want to request includes punctuation, omit the punctuation when searching.\n\n - Different permissions require different information, depending on how the administrator has configured the permission form. If the permission requires detailed information, the Dashboard redirects you to a separate window when you select the permission.\n\n - You can request multiple permissions at the same time. \n\n- However, if the permission form for one of the requests requires special types of information, you might not be able to include that permission in a multi-permission request. To request multiple permissions at once, the request forms for the various requests cannot require detailed information.\n\n - You can specify the expiry date while requesting for a resource or a role.\n\n - When you request a permission, you must specify a reason for the request. You can also specify the date that you need the permission to begin or expire. You can request permissions in the following ways:\n\n - Select one of the Featured Items. You cannot make this request on behalf of another person.\n\n NOTE:By default, Helpdesk Ticket permission appears in the Featured Items category. You can raise a helpdesk ticket using this permission. \n\n- Request several permissions at once. \n\n- Request a permission that is not among the Featured Items.\n\n - Perform the request on behalf of someone else."
+      ]
+    },
+    {
+      "tag": "roles_resources",
+      "patterns": [
+        "Understanding Roles and Resources",
+        "What are roles and resources?",
+        "Can you explain roles and resources?",
+        "How do roles and resources work in the Identity Manager?"
+      ],
+      "responses": [
+        "In the identity applications, a permission represents the access provided to a user or group of users for a role or resource. A role defines a set of permissions related to one or more target systems or applications. For example, a user administrator role might be authorized to reset a user's password, while a system administrator role might have the ability to assign a user to a specific server. A resource is any digital entity such as a user account, computer, or database that a business user needs to be able to access."
+      ]
+  },
+    {
+      "tag": "identity_apps",
+      "patterns": [
+        "Understanding the Identity Applications",
+        "What are the Identity Manager identity applications?",
+        "Can you explain the identity applications?",
+        "How do the identity applications work?"
+      ],
+      "responses": [
+        "The Identity Manager identity applications are an interconnected set of browser-based Web applications. They enable your organization to manage the user accounts and permissions associated with the wide variety of roles and resources available to users. You can configure the identity applications to provide self-service support for your users, such as requesting roles or changing their passwords. You can also set up workflows to improve the efficiency in managing and assigning roles and resources."
+      ]
+    },
+    {
+      "tag": "understanding_identity_manager_dashboard",
+      "patterns": [
+        "What is the NetIQ Identity Manager Dashboard?",
+        "What does the Dashboard do?",
+        "What is the Dashboard for?",
+        "How do I access the Dashboard?",
+        "What activities can I perform from the Dashboard?"
+      ],
+      "responses": [
+        "NetIQ Identity Manager Dashboard (the Dashboard) serves as the primary entry portal to the identity applications. The Dashboard can have one or many widgets that helps you with the quick information on particular activity. From your Dashboard, you can perform the following activities: Manage your profile settings and password. View your organization chart details. Review and complete your tasks, such as approving user requests for access. Request permissions for roles, resources, or processes. Review the status and history of the requests for permissions. Find other users in your organization.Personalize your dashboard, you can add widgets and reposition them based on your interests. Set any user as your proxy from the system. Delegate your tasks to other users from the system."
+      ]
+    },
+    {
+      "tag": "understanding_tasks",
+      "patterns": [
+        "what can I do on the Tasks page?",
+        "how do I manage tasks on the Identity Manager dashboard?",
+        "what are the options available on the Tasks page?",
+        "how can I approve or deny tasks on the Identity Manager dashboard?"
+      ],
+      "responses": [
+        "The Tasks page allows you to approve or deny actions for the tasks listed. On the Identity Manager dashboard, you can manage the Identity Manager and Identity Governance tasks from the Tasks page. You can view and approve both Identity Manager and Identity Governance tasks from the same user interface on the Tasks page. You can use the Tasks page on the Identity Manager dashboard to manage your tasks and approve or deny actions."
+      ]
+    },
+    {
+      "tag": "ManagingGroups",
+      "patterns": [
+        "What is a group?",
+        "How can I manage a group?",
+        "Tell me about groups"
+      ],
+      "responses": ["A group consists of users and other accounts that have a common characteristics. In the Dashboard, you can search groups based on its description. Searching for a specific group while assigning a role to a group, making a group as the owner of a resource, or while performing a simple search in the Groups page will return the result based on the group description configured by the administrator."]
+    },
+    {
+      "tag": "Creating a Group",
+      "patterns": [
+        "How do I create a new group?",
+        "What are the steps to create a group?",
+        "Can you help me create a group?",
+        "I need to add a new group, how can I do it?"
+      ],
+      "responses": ["If you have an administrative role in the identity applications, you can create a group. In the Identity Manager Dashboard, go to People > Groups. Click +. Specify values for the required attributes (Name, Description, Container). Click Create. When the group is created successfully, the Group Members panel is displayed that allows you to add the users to the newly created group. For more details, please check the following link: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/t4cltyos9uk2.html"]
+    },
+    {
+      "tag": "identity_self_service",
+      "patterns": [
+        "How does Identity Self-Service work?",
+        "How does self-service work?",
+        "Can you explain self-service?",
+        "What is self-service?",
+        "How do I use self-service?"
+      ],
+      "responses": [
+        "You can find more information on how Identity Self-Service works here: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/use-cases-for-identity-manager-applications.html"
+      ]
+    },
+    {
+      "tag": "roles_and_resources",
+      "patterns": [
+        "How do Roles and Resources work?",
+        "Can you explain Roles and Resources?",
+        "What are Roles and Resources?",
+        "How are Roles and Resources assigned?",
+        "How are resources associated with roles?"
+      ],
+      "responses": [
+        "You can find more information on how Roles and Resources work here: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/use-cases-for-identity-manager-applications.html"
+      ]
+    },
+    {
+      "tag": "helpdesk",
+      "patterns": [
+        "How does Helpdesk work?",
+        "Can you explain Helpdesk?",
+        "What is the Helpdesk feature?",
+        "How can I contact Helpdesk?",
+        "What types of issues can Helpdesk assist with?"
+      ],
+      "responses": [
+        "You can find more information on how Helpdesk works here: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/use-cases-for-identity-manager-applications.html"
+      ]
+    },
+    {
+      "tag": "access_identity_applications",
+      "patterns": [
+        "How do I access the identity applications?",
+        "What should I consider before accessing the identity applications?",
+        "What are the requirements for accessing the identity applications?"
+      ],
+      "responses": [
+        "Before accessing the identity applications, you must enable cookies and JavaScript in your web browser. If you are using Internet Explorer, you should also set at least a medium privacy level and select the option to check for newer versions of stored pages every time you visit the webpage. Additionally, please note that you cannot access the identity applications using an account that includes certain characters in the name, such as /, * ? . $ # +. If you have previously accessed the Identity Manager User Application, you may be able to use the same user name and password to access the Dashboard. If you have trouble accessing the applications, you can click 'Forgot password' for assistance. Finally, please note that if you see a different first page when accessing the Identity Manager user interface, it may be due to customization for your organization, and you should check with your system administrator to learn more about any differences from the default configuration."
+      ]
+    },
+    {
+      "tag": "first_time_login",
+      "patterns": [
+        "How do I log in for the first time?",
+        "What do I need to do for my first login?",
+        "How do I set up my account for the first time login?",
+        "What is the process for first time login?"
+      ],
+      "responses": [
+        "To log in for the first time, you need to be an authorized user. If you need help getting a username and password, please contact your system administrator. The first time you log in, you will be prompted to set up security questions for your account. These questions will be used to help you reset your password if you forget it in the future. To set up your security questions, simply enter your username and password and click Login. You will then be redirected to the Challenge-Response page where you can specify your security questions and answers. Once you have done this, click Save Answers and you will be redirected to the Dashboard. For more information, please visit: https://www.netiq.com/documentation/identity-manager-48/identity_apps_user_4821/data/login-identity-applications-for-first-time-users.html"
+      ]
+    }
+  ]
+}
